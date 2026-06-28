@@ -1,39 +1,76 @@
-# Integrate React with Node.js Express & MySQL (run on same Server/Port)
+AI Travel Planner
 
-For more detail, please visit:
-> [How to integrate React with Node.js Express on same Server/Port](https://bezkoder.com/integrate-react-express-same-server-port/)
+AI Travel Planner is a full-stack web application that helps users plan trips by generating personalized travel itineraries based on their preferences. The application combines a React frontend with a Node.js and Express backend, while Google Gemini API is used to generate travel recommendations.
 
-> [React (Components) CRUD example to consume Web API](https://bezkoder.com/react-crud-web-api/)
+Features
+Generate personalized travel itineraries using AI
+Select destination, budget, duration, and travel preferences
+Interactive and responsive user interface
+REST API for handling client requests
+Secure API key management using environment variables
+Tech Stack
+Frontend
+React.js
+JavaScript
+HTML
+CSS
+Backend
+Node.js
+Express.js
+AI Integration
+Google Gemini API
+Project Structure
+react-express-mysql/
+│
+├── react-client/          # React frontend
+├── node-express-server/   # Express backend
+└── README.md
+Getting Started
+Prerequisites
+Node.js
+npm
+Google Gemini API Key
+Installation
 
-> [Build Node.js Rest APIs with Express, Sequelize & MySQL](https://bezkoder.com/node-js-express-sequelize-mysql/)
+Clone the repository:
 
-More Practice:
-> [React (Hooks) CRUD example to consume Web API](https://bezkoder.com/react-hooks-crud-axios-api/)
+git clone https://github.com/AkashW07/AI-Travel.git
 
-> [React Material UI examples with a CRUD Application](https://bezkoder.com/react-material-ui-examples-crud/)
+Go to the project directory:
 
-> [Server side Pagination in Node.js with Sequelize and MySQL](https://bezkoder.com/node-js-sequelize-pagination-mysql/)
+cd AI-Travel
 
-> [Deploying/Hosting Node.js app on Heroku with MySQL database](https://bezkoder.com/deploy-node-js-app-heroku-cleardb-mysql/)
+Install backend dependencies:
 
-Associations:
-> [Sequelize Associations: One-to-Many Relationship example](https://bezkoder.com/sequelize-associate-one-to-many/)
+cd node-express-server
+npm install
 
-> [Sequelize Associations: Many-to-Many Relationship example](https://bezkoder.com/sequelize-associate-many-to-many/)
+Install frontend dependencies:
 
-Fullstack with Node.js Express:
-> [React.js + Node.js Express + MySQL](https://bezkoder.com/react-node-express-mysql/)
+cd ../react-client
+npm install
+Environment Variables
 
-> [React.js + Node.js Express + PostgreSQL](https://bezkoder.com/react-node-express-postgresql/)
+Create a .env file inside the node-express-server directory and add your Google Gemini API key.
 
-> [React.js + Node.js Express + MongoDB](https://bezkoder.com/react-node-express-mongodb-mern-stack/)
+Example:
 
-Security:
-> [React + Node.js Express + MySQL: User Authentication with JWT example](https://www.bezkoder.com/react-express-authentication-jwt/)
+GOOGLE_API_KEY=your_api_key_here
+Run the Backend
+cd node-express-server
+npm start
+Run the Frontend
+cd react-client
+npm start
 
-> [React + Node.js Express + MongoDB: User Authentication with JWT example](https://www.bezkoder.com/react-node-mongodb-auth/)
+The application will be available at:
 
-Serverless:
-> [React Firebase CRUD App with Realtime Database](https://bezkoder.com/react-firebase-crud/)
-
-> [React Firestore CRUD App example | Firebase Cloud Firestore](https://bezkoder.com/react-firestore-crud/)
+Frontend: http://localhost:3000
+Backend: http://localhost:8080
+Future Improvements
+User authentication
+Save previous trips
+Hotel and flight recommendations
+Interactive maps
+Weather forecasts
+PDF itinerary export
