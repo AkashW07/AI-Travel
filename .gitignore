@@ -1,0 +1,10 @@
+# Environment files
+node-express-server/.env
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+react-client/.env
